@@ -20,3 +20,20 @@ export interface ApiError {
   errors?: Record<string, string>;
   timestamp: string;
 }
+
+export interface User {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  role: string;
+  createdAt: string;
+}
+
+export interface CreateUserRequest {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  role: string;
+}
